@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.song').on('click', function(){
+	$('.song').on('click touchstart', function(){
 
 		var song = $(this);
 		var song_loc = $(this).attr('data-song');
@@ -205,7 +205,7 @@ $(document).ready(function(){
 		clearInterval(time_marker);
 		var next_song = song.nextAll('.song:first');
 		if(next_song[0]) {
-			next_song.click();		  
+			next_song.click().touchstart();		  
 		}
 		else {
 			$('h3').removeClass('red');
@@ -216,7 +216,7 @@ $(document).ready(function(){
 		}
 	}
 
-	$('.click-to-play-all').on('click', function(){
+	$('.click-to-play-all').on('click touchstart', function(){
 		$('.first-song').click();
 	})
 
