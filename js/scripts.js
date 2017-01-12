@@ -205,7 +205,7 @@ $(document).ready(function(){
 		clearInterval(time_marker);
 		var next_song = song.nextAll('.song:first');
 		if(next_song[0]) {
-			next_song.click().touchstart();		  
+			next_song.click();		  
 		}
 		else {
 			$('h3').removeClass('red');
