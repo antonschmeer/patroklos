@@ -152,11 +152,18 @@ h1 {
 .click-to-play-all {
     margin: 30px 11% 20px 11%;
     font-style: italic;
+    visibility: hidden;
 }
-.click-to-play-all:hover {
-    color: #F00;
-    cursor: pointer;
+@media screen and (min-width: 600px) {
+    .click-to-play-all {
+        visibility: visible;
+    }
+    .click-to-play-all:hover {
+        color: #F00;
+        cursor: pointer;
+    }
 }
+
 .tracks {
     margin: 20px 11%;
 }
@@ -206,19 +213,20 @@ a:hover {
     outline: none;
     border: none;
 }
-
 .red {
     color: #F00;
 }
-
 .song:hover {
     cursor: pointer;
-    color: #F00;
 }
-
-.song:hover::after {
-    content: ' (click to play)';
-    font-style: italic;
+@media screen and (min-width: 600px) {
+    .song:hover {
+        color: #F00;
+    }
+    .song:hover::after {
+        content: ' (click to play)';
+        font-style: italic;
+    }
 }
 
 .song:active {
@@ -263,8 +271,8 @@ audio::-webkit-media-controls-time-remaining-display {
         margin: 70px 4%;
     }
     .title {
-        font-size: 36px;   
-        margin: 130px 10% 40px 10%; 
+        font-size: 46px;   
+        margin: 130px 10% 0px 10%; 
     }
     .tracks {
         margin: 30px 4%;
@@ -274,6 +282,9 @@ audio::-webkit-media-controls-time-remaining-display {
     }
     h2.song {
         margin-top: 60px;
+    }
+    h2.first-song {
+        margin-top: -60px;
     }
     .tracks h3 {
         font-size: 18px;

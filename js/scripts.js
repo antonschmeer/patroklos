@@ -290,8 +290,8 @@ $(document).ready(function(){
 	});
 
 	// eliminate the 300ms click delay on mobile browsers https://github.com/ftlabs/fastclick
-	$(function() {
-	    FastClick.attach(document.body);
-	});
+	// $(function() {
+	//     FastClick.attach(document.body);
+	// });
 
 });
