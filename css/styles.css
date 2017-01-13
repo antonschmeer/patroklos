@@ -254,6 +254,10 @@ audio {
     z-index: 99999;    
 }
 
+audio::-webkit-media-controls-panel {
+    background: #FFF;
+}
+
 audio::-webkit-media-controls-current-time-display {
     font-family: 'TIActuBetaMono-Thin_web';
 }
