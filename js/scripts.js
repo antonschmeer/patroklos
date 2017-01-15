@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.song').on('click touchstart', function(){
+	$('.song').on('click', function(){
 
 		if(typeof time_marker != "undefined") {
 			clearInterval(time_marker);			
@@ -220,7 +220,7 @@ $(document).ready(function(){
 		}
 	}
 
-	$('.click-to-play-all').on('click touchstart', function(){
+	$('.click-to-play-all').on('click', function(){
 		$('.first-song').click();
 	})
 
