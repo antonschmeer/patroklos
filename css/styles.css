@@ -135,6 +135,7 @@ span.heading-contact {
     position: relative;
     z-index: 0;
     width: 50vw;
+    max-width: 980px;
     height: auto;
     margin-top: 10px;
     margin-left: 11%;
