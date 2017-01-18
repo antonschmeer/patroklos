@@ -104,13 +104,13 @@ span.heading-contact {
 
 @media screen and (max-width: 768px) {
     span.heading-contact {
-        left: 5px;
+        left: 3px;
         top: 25px;
     }
 
     .email {
         position: fixed;
-        left: 13px;
+        left: 12px;
     }
 }
 
